@@ -1,0 +1,286 @@
+:root {
+  --color-yellow: yellow;
+  --color-pink: rgb(230, 34, 207);
+  --color-white: white;
+  --color-black: black;
+  --color-green: green;
+  --color-red: red;
+}
+
+body {
+  font-family: 'Martian Mono', monospace;
+}
+
+header {
+  font-family: 'Unbounded', cursive;
+}
+
+/*the wrapper class*/
+.wrapper {
+  margin: 0 auto;
+  width: 95%;
+
+}
+
+/*change the width as required*/
+
+.mygtukas1 {
+  margin: 3px;
+  font-family: 'Unbounded', cursive;
+  color: var(--color-yellow);
+  background: var(--color-pink);
+  border-radius: 10px;
+  border-color: var(--color-pink);
+}
+
+.mygtukas1:hover {
+  margin: 3px;
+  font-family: 'Unbounded', cursive;
+  color: var(--color-pink);
+  background: var(--color-white);
+  border-radius: 10px;
+  border-color: var(--color-pink);
+}
+
+.mygtukas1:active {
+  margin: 3px;
+  font-family: 'Unbounded', cursive;
+  color: var(--color-black);
+  background: var(--color-white);
+  border-radius: 10px;
+  border-color: var(--color-black);
+}
+
+
+
+.mygtukas2 {
+  margin: 3px;
+  font-family: 'Unbounded', cursive;
+  color: var(--color-pink);
+  background: transparent;
+  border-radius: 10px;
+  border-color: var(--color-pink);
+}
+
+.mygtukas2:hover {
+  margin: 3px;
+  font-family: 'Unbounded', cursive;
+  color: var(--color-yellow);
+  background: var(--color-pink);
+  border-radius: 10px;
+  border-color: var(--color-pink);
+}
+
+.mygtukas2:active {
+  margin: 3px;
+  font-family: 'Unbounded', cursive;
+  color: var(--color-black);
+  background: transparent;
+  border-radius: 10px;
+  border-color: var(--color-black);
+}
+
+
+
+#checkbox {
+  background-color: var(--color-pink);
+}
+
+#checkbox:hover {
+  background-color: var(--color-pink);
+}
+
+#checkbox:active {
+  background-color: var(--color-black);
+  color: white;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: var(--color-yellow);
+  }
+
+  10% {
+    background-color: var(--color-green);
+
+  }
+
+  30% {
+    background-color: var(--color-red);
+  }
+
+  50% {
+    background-color: var(--color-yellow);
+  }
+
+  80% {
+    background-color: var(--color-green);
+
+  }
+
+  100% {
+    background-color: var(--color-red);
+  }
+}
+
+#checkbox:checked {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  animation-name: change-color;
+  animation-duration: 2s;
+  border-color: var(--color-black);
+
+}
+
+.pagenew1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.pagenew2 {
+  animation-duration: 3s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin: 0%;
+    width: 100%;
+  }
+}
+
+.pagenew3 {
+  animation-duration: 3s;
+  animation-name: slidein3;
+}
+
+@keyframes slidein3 {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+.pagenew4 {
+  animation-duration: 3s;
+  animation-name: slidein3;
+}
+
+@keyframes slidein3 {
+  from {
+    margin-bottom: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
+}
+
+h2:hover {
+  text-shadow: 1px 3px 5px rgb(71, 70, 70);
+  animation-duration: 400ms;
+  animation-name: h2;
+}
+
+@keyframes h2 {
+
+  0% {
+    opacity: 0.3;
+  }
+
+  30% {
+    opacity: 0.6;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.9;
+  }
+
+  80% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+a:hover {
+  color: var(--color-white);
+  border-radius: 5px;
+  background-color: slategrey;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  box-shadow: 1px 3px 5px rgb(71, 70, 70);
+  animation-duration: 400ms;
+  animation-name: alink;
+}
+
+
+a {
+  border-radius: 5px;
+}
+
+@keyframes alink {
+  0% {
+    -webkit-filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(1px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
+.hi {
+  float: left;
+  width: 15%;
+  border-radius: 7px;
+}
+
+#nw1:hover, #nw2:hover{
+  box-shadow: 1px 1px 3px;
+}
+
+#nav { 
+
+  box-shadow: 1px 3px 5px slategrey;
+}
+
+.dropdown-item:active {
+  color: var(--color-white);
+  border-radius: 5px;
+  background-color: slategrey;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  box-shadow: 1px 3px 5px rgb(71, 70, 70);
+  animation-duration: 400ms;
+  animation-name: alink;
+}
